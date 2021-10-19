@@ -1,26 +1,29 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Container from "./views/Container.vue";
-import Login from "./views/Login";
-import StudentCourseSelect from "./views/student/StudentCourseSelect";
-import StudentCourse from "./views/student/StudentCourse";
-import StudentInfo from "./views/student/StudentInfo";
-import StudentTimeTable from "./views/student/StudentTimeTable";
-import StudentExam from "./views/student/StudentExam";
-import StudentScore from "./views/student/StudentScore";
-import TeacherCourse from "./views/teacher/TeacherCourse";
-import TeacherTimetable from "./views/teacher/TeacherTimetable";
-import TeacherGrade from "./views/teacher/TeacherGrade";
-import AdminDepartment from "./views/admin/AdminDepartment";
-import AdminMajor from "./views/admin/AdminMajor";
-import AdminClass from "./views/admin/AdminClass";
-import AdminStudent from "./views/admin/AdminStudent";
-import AdminTeacher from "./views/admin/AdminTeacher";
-import AdminCourse from "./views/admin/AdminCourse";
-import AdminStudentCourse from "./views/admin/AdminStudentCourse";
-import AdminAdmin from "./views/admin/AdminAdmin";
-import Home from "./views/Home";
-
+const Login = () => import('./views/Login')
+const Container = () => import('./views/Container')
+const StudentExam = () => import('./views/student/StudentExam')
+const StudentTimeTable = () => import('./views/student/StudentTimeTable')
+const StudentInfo = () => import('./views/student/StudentInfo')
+const StudentCourse= () => import('./views/student/StudentCourse')
+const StudentCourseSelect = () => import('./views/student/StudentCourseSelect')
+const StudentScore = () => import('./views/student/StudentScore')
+const TeacherCourse = () => import('./views/teacher/TeacherCourse')
+const TeacherTimetable = () => import('./views/teacher/TeacherTimetable')
+const TeacherTimetable = () => import('./views/teacher/TeacherTimetable')
+const TeacherGrade = () => import('./views/teacher/TeacherGrade')
+const AdminDepartment= () => import('./views/admin/AdminDepartment')
+const AdminMajor = () => import('./views/admin/AdminMajor')
+const AdminClass = () => import('./views/admin/AdminClass')
+const AdminStudent= () => import('./views/admin/AdminStudent')
+const AdminTeacher = () => import('./views/admin/AdminTeacher')
+const AdminCourse = () => import("./views/admin/AdminCourse")
+const AdminStudent = () => import('./views/admin/AdminStudent')
+const AdminTeacher = () => import('./views/admin/AdminTeacher')
+const AdminCourse = () => import('./views/admin/AdminCourse')
+const AdminStudentCourse = () => import('./views/admin/AdminStudentCourse')
+const AdminAdmin = () => import('./views/admin/AdminAdmin')
+const Home= () => import('./views/Home')
 Vue.use(VueRouter);
 
 const routes = [
